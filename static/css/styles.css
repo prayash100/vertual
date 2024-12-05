@@ -1,0 +1,205 @@
+body {
+    font-family: 'Dancing Script', cursive;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 9000px; /* Make the page long for scrolling */
+}
+
+.greeting {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #ff69b4; /* Pinkish color for the greeting */
+    animation: bounce 2s infinite; /* Add bounce animation */
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Webcam container styling */
+.webcam-container {
+    width: 800px; /* Smaller size */
+    height: 500px;
+    border: 5px solid #ff69b4; /* Cute pink border */
+    border-radius: 15px; /* Curved edges */
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow */
+    padding: 5px;
+    background-color: white;
+    display: flex; /* Flexbox to center the video */
+    justify-content: center; /* Center video horizontally */
+    align-items: center; /* Center video vertically */
+}
+
+/* For video element inside the container */
+.webcam-container video {
+    border: 5px solid #ff69b4; /* Fancy border around the webcam feed */
+    border-radius: 15px;
+    width: 90%; /* Make video responsive to container size */
+    height: 90%; /* Ensure the video fills the container */
+    object-fit: cover; /* Ensure video fills the container without distortion */
+}
+
+
+/* Flexbox for aligning letter and images */
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: #fdf8f5;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the images */
+.image-container {
+    flex: 1;
+    text-align: center;
+}
+
+.side-image {
+    width: 250px;
+    height: auto;
+    margin: 10px;
+    animation: bounce 2s infinite;
+}
+
+/* Letter container styling */
+.letter-container {
+    flex: 2;
+    padding: 10px;
+    text-align: justify;
+    font-family: 'Dancing Script', cursive;
+    color: #444;
+    font-size: 1.2rem;
+}
+
+/* Animation for images */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+.seven {
+    position: relative;
+    width: 100%;
+    height: 1000px; /* Long scrolling section */
+    overflow: hidden; /* Prevent horizontal scrolling */
+    background: linear-gradient(to bottom, #fdf8f5, #FFFFFF); /* Sky-like gradient */
+}
+
+.baloons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Prevent balloons from interfering with user interactions */
+}
+
+.baloons img {
+    position: absolute;
+    width: 500px; /* Balloon size */
+    height: auto;
+    animation: float 10s infinite ease-in-out; /* Floating animation */
+    opacity: 0.8; /* Slight transparency */
+}
+
+/* Balloon positions for each balloon */
+.baloons img:nth-child(3n+1) {
+    left: 10%; /* Left side */
+    animation-duration: 12s;
+}
+
+.baloons img:nth-child(3n+2) {
+    left: 50%; /* Middle */
+    transform: translateX(-50%);
+    animation-duration: 14s;
+}
+
+.baloons img:nth-child(3n+3) {
+    left: 90%; /* Right side */
+    transform: translateX(-100%);
+    animation-duration: 16s;
+}
+
+/* Balloon floating animation */
+@keyframes float {
+    0% {
+        transform: translateY(100vh); /* Start below the viewport */
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.9; /* Mid-flight opacity */
+    }
+    100% {
+        transform: translateY(-200vh); /* Float above the viewport */
+        opacity: 0; /* Fade out */
+    }
+}
+/* Scroll Content Section */
+.scroll-content {
+    position: relative;
+    z-index: 2; /* Above balloons */
+    margin-top: 50px;
+}
+
+.scroll-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0; /* Space between sections */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Images in the scroll section */
+.scroll-section img {
+    width: 500px;
+    height: auto;
+    border: 5px solid #ff69b4; /* Matching webcam border */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Text styling */
+.scroll-section h3 {
+    font-size: 2rem;
+    color: #ff69b4; /* Same theme color */
+    margin-bottom: 10px;
+}
+
+.scroll-section p {
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Alternating alignment */
+.scroll-section:nth-child(odd) {
+    flex-direction: row;
+}
+
+.scroll-section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #fbfafa;
+    color: #e82697;
+}

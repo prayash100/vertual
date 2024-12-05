@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+     <!-- Confetti animation -->
+</head>
+<body>
+    <!-- Greeting Section -->
+    <div class="greeting">
+        <h1>Happy Birthday, Jahnvi!</h1>
+        <div class="confetti-container">
+            <!-- Lottie Confetti Animation -->
+            <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_GZq5w8.json" background="transparent" speed="1" loop autoplay></lottie-player>
+        </div>
+    </div>
+    <!-- Webcam Feed -->
+    <div class="webcam-container">
+        <img src="/video_feed" alt="Webcam Feed" />
+    </div>
+    <div class="seven">
+        <div class="baloons">
+            {% for i in range(50) %}
+                <img src="{{ url_for('static', filename='images/ballon1.svg') }}" alt="Balloon 1">
+                <img src="{{ url_for('static', filename='images/ballon2.svg') }}" alt="Balloon 2">
+                <img src="{{ url_for('static', filename='images/ballon3.svg') }}" alt="Balloon 3">
+            {% endfor %}
+        </div>
+    </div>
+    
+    <div class="scroll-content">
+        <!-- Picture and Text Sections -->
+        <div class="scroll-section">
+            <div class="image-left">
+                <img src="{{ url_for('static', filename='images/jahnvi_justborn.jpeg') }}" alt="Pic 1">
+            </div>
+            <div class="text-right">
+                <h3>Moon landed on Earth </h3>
+                <p> A precious little bundle of joy,</p>
+                <p> full of innocence and wonder. With tiny hands and feet, </p>
+                <p> this newborn baby brings endless happiness and love to the world.</p>
+                <p> Every smile, every coo is a reminder of the miracle of life and the bright future ahead.</p>
+                <p> Pure, heartwarming bliss.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="seven">
+        <div class="baloons">
+            {% for i in range(50) %}
+                <img src="{{ url_for('static', filename='images/ballon1.svg') }}" alt="Balloon 1">
+                <img src="{{ url_for('static', filename='images/ballon2.svg') }}" alt="Balloon 2">
+                <img src="{{ url_for('static', filename='images/ballon3.svg') }}" alt="Balloon 3">
+            {% endfor %}
+        </div>
+    </div>
+    <div class="scroll-content">
+        <div class="scroll-section">
+            <div class="text-left">
+                <h3>Cuteness Overloaded </h3>
+                <p> You look absolutely adorable in that white frock, your clean-shaven head adding a touch of uniqueness. 
+                    Sitting on the mat, you radiate an innocent charm that melts my heart. 
+                    Your pure beauty and graceful presence make every moment with you feel special.
+                     Truly, you are a joy to behold.</p>
+                <p> Ekdam cutu pro max </p>
+            </div>
+            <div class="image-right">
+                <img src="{{ url_for('static', filename='images/jahnvi_justborn2.jpeg') }}" alt="Pic 2">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="seven">
+        <div class="baloons">
+            {% for i in range(50) %}
+                <img src="{{ url_for('static', filename='images/ballon1.svg') }}" alt="Balloon 1">
+                <img src="{{ url_for('static', filename='images/ballon2.svg') }}" alt="Balloon 2">
+                <img src="{{ url_for('static', filename='images/ballon3.svg') }}" alt="Balloon 3">
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="scroll-content">
+        <!-- Picture and Text Sections -->
+        <div class="scroll-section">
+            <div class="image-left">
+                <img src="{{ url_for('static', filename='images/jahnvi with bicycle.jpeg') }}" alt="Pic 1">
+            </div>
+            <div class="text-right">
+                <h3>Princess with hat and tricycle</h3>
+                <p> A precious little girl, riding her tricycle with a sparkling princess hat, radiates pure joy and cuteness.</p>
+                <p> Her dad lovingly assists, creating a beautiful moment of connection and care.</p>
+                <p> The bond between them is heartwarming, filled with love, laughter, and the magic of father-daughter moments. </p>
+                <p> A picture of chunnu munnu in every way.</p>
+                <p> Heavy driver spotted.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="seven">
+        <div class="baloons">
+            {% for i in range(50) %}
+                <img src="{{ url_for('static', filename='images/ballon1.svg') }}" alt="Balloon 1">
+                <img src="{{ url_for('static', filename='images/ballon2.svg') }}" alt="Balloon 2">
+                <img src="{{ url_for('static', filename='images/ballon3.svg') }}" alt="Balloon 3">
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="scroll-content">
+        <div class="scroll-section">
+            <div class="text-left">
+                <h3>Radha Costume</h3>
+                <p>You look absolutely stunning in that yellow ghagra, embodying the divine essence of Radha with such grace and purity.
+                     The way you carry yourself, with that innocent smile and sparkling eyes, 
+                     truly reflects the love and devotion that Radha symbolizes.
+                      You’ve captured the goddess’s beauty and charm so effortlessly, 
+                    making this moment feel magical.</p>
+                <p>Your radiant energy shines through every part of your outfit,
+                     and the way your ghagra flows around you only adds to the enchantment.
+                      It’s as if the divine has taken the form of this sweet little girl,
+                       bringing both joy and serenity in one glance. 
+                       You make Radha’s story come alive in such a playful and adorable way, 
+                       reflecting her love,
+                     her elegance, and her youthful spirit.</p>
+                <p>This image of you, dressed as Radha, fills my heart with warmth.
+                     It’s amazing how you, in your innocent and joyful way,
+                      can connect with such a powerful and graceful figure from mythology. 
+                    Truly, you are a vision of beauty and divinity.</p>
+            </div>
+            <div class="image-right">
+                <img src="{{ url_for('static', filename='images/jahnvi_radha_costume.jpeg') }}" alt="Pic 2">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="seven">
+        <div class="baloons">
+            {% for i in range(50) %}
+                <img src="{{ url_for('static', filename='images/ballon1.svg') }}" alt="Balloon 1">
+                <img src="{{ url_for('static', filename='images/ballon2.svg') }}" alt="Balloon 2">
+                <img src="{{ url_for('static', filename='images/ballon3.svg') }}" alt="Balloon 3">
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Letter Section -->
+    <div class="content-container">
+        <!-- Left Side: Images -->
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/doraemon_left.png') }}" alt="Doraemon Left" class="side-image">
+        </div>
+    
+        <!-- Center: Letter -->
+        <div class="letter-container">
+            <h2>Dear Jahnvi,</h2>
+            <p>
+                This is a little effort to celebrate you—our princess today and the queen of tomorrow. 🎉<br>
+                You bring joy and laughter to my life, and you are way cuter than Doraemon. <br>
+                Wishing you a magical birthday filled with happiness and dreams coming true. 💖
+            </p>
+            <p>Hugs, Kisses, and Lots of LOVE</p>
+            <p>Your Amazing!</p>
+            <p>From your Prayuu</p>
+        </div>
+    
+        <!-- Right Side: Images -->
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/doraemon_right.png') }}" alt="Doraemon Right" class="side-image">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        Made with ❤️ for Jahnvi's Special Day!
+    </footer>
+<script src="static/js/script.js"></script>
+</body>
+</html>
